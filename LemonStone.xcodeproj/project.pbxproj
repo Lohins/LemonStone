@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9911209C2078FF5A00DF825C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9911209B2078FF5A00DF825C /* AppDelegate.swift */; };
+		9911209E2078FF5A00DF825C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9911209D2078FF5A00DF825C /* FirstViewController.swift */; };
+		991120A02078FF5A00DF825C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9911209F2078FF5A00DF825C /* SecondViewController.swift */; };
+		991120A32078FF5A00DF825C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 991120A12078FF5A00DF825C /* Main.storyboard */; };
+		991120A52078FF5A00DF825C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 991120A42078FF5A00DF825C /* Assets.xcassets */; };
+		991120A82078FF5A00DF825C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 991120A62078FF5A00DF825C /* LaunchScreen.storyboard */; };
+		991120B32078FF5A00DF825C /* LemonStoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991120B22078FF5A00DF825C /* LemonStoneTests.swift */; };
+		991120BE2078FF5A00DF825C /* LemonStoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991120BD2078FF5A00DF825C /* LemonStoneUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		991120AF2078FF5A00DF825C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 991120902078FF5A00DF825C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 991120972078FF5A00DF825C;
+			remoteInfo = LemonStone;
+		};
+		991120BA2078FF5A00DF825C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 991120902078FF5A00DF825C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 991120972078FF5A00DF825C;
+			remoteInfo = LemonStone;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		991120982078FF5A00DF825C /* LemonStone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LemonStone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9911209B2078FF5A00DF825C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9911209D2078FF5A00DF825C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		9911209F2078FF5A00DF825C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		991120A22078FF5A00DF825C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		991120A42078FF5A00DF825C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		991120A72078FF5A00DF825C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		991120A92078FF5A00DF825C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		991120AE2078FF5A00DF825C /* LemonStoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LemonStoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		991120B22078FF5A00DF825C /* LemonStoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonStoneTests.swift; sourceTree = "<group>"; };
+		991120B42078FF5A00DF825C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		991120B92078FF5A00DF825C /* LemonStoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LemonStoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		991120BD2078FF5A00DF825C /* LemonStoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonStoneUITests.swift; sourceTree = "<group>"; };
+		991120BF2078FF5A00DF825C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		991120952078FF5A00DF825C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		991120AB2078FF5A00DF825C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		991120B62078FF5A00DF825C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9911208F2078FF5A00DF825C = {
+			isa = PBXGroup;
+			children = (
+				9911209A2078FF5A00DF825C /* LemonStone */,
+				991120B12078FF5A00DF825C /* LemonStoneTests */,
+				991120BC2078FF5A00DF825C /* LemonStoneUITests */,
+				991120992078FF5A00DF825C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		991120992078FF5A00DF825C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				991120982078FF5A00DF825C /* LemonStone.app */,
+				991120AE2078FF5A00DF825C /* LemonStoneTests.xctest */,
+				991120B92078FF5A00DF825C /* LemonStoneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9911209A2078FF5A00DF825C /* LemonStone */ = {
+			isa = PBXGroup;
+			children = (
+				9911209B2078FF5A00DF825C /* AppDelegate.swift */,
+				9911209D2078FF5A00DF825C /* FirstViewController.swift */,
+				9911209F2078FF5A00DF825C /* SecondViewController.swift */,
+				991120A12078FF5A00DF825C /* Main.storyboard */,
+				991120A42078FF5A00DF825C /* Assets.xcassets */,
+				991120A62078FF5A00DF825C /* LaunchScreen.storyboard */,
+				991120A92078FF5A00DF825C /* Info.plist */,
+			);
+			path = LemonStone;
+			sourceTree = "<group>";
+		};
+		991120B12078FF5A00DF825C /* LemonStoneTests */ = {
+			isa = PBXGroup;
+			children = (
+				991120B22078FF5A00DF825C /* LemonStoneTests.swift */,
+				991120B42078FF5A00DF825C /* Info.plist */,
+			);
+			path = LemonStoneTests;
+			sourceTree = "<group>";
+		};
+		991120BC2078FF5A00DF825C /* LemonStoneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				991120BD2078FF5A00DF825C /* LemonStoneUITests.swift */,
+				991120BF2078FF5A00DF825C /* Info.plist */,
+			);
+			path = LemonStoneUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		991120972078FF5A00DF825C /* LemonStone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 991120C22078FF5A00DF825C /* Build configuration list for PBXNativeTarget "LemonStone" */;
+			buildPhases = (
+				991120942078FF5A00DF825C /* Sources */,
+				991120952078FF5A00DF825C /* Frameworks */,
+				991120962078FF5A00DF825C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LemonStone;
+			productName = LemonStone;
+			productReference = 991120982078FF5A00DF825C /* LemonStone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		991120AD2078FF5A00DF825C /* LemonStoneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 991120C52078FF5A00DF825C /* Build configuration list for PBXNativeTarget "LemonStoneTests" */;
+			buildPhases = (
+				991120AA2078FF5A00DF825C /* Sources */,
+				991120AB2078FF5A00DF825C /* Frameworks */,
+				991120AC2078FF5A00DF825C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				991120B02078FF5A00DF825C /* PBXTargetDependency */,
+			);
+			name = LemonStoneTests;
+			productName = LemonStoneTests;
+			productReference = 991120AE2078FF5A00DF825C /* LemonStoneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		991120B82078FF5A00DF825C /* LemonStoneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 991120C82078FF5A00DF825C /* Build configuration list for PBXNativeTarget "LemonStoneUITests" */;
+			buildPhases = (
+				991120B52078FF5A00DF825C /* Sources */,
+				991120B62078FF5A00DF825C /* Frameworks */,
+				991120B72078FF5A00DF825C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				991120BB2078FF5A00DF825C /* PBXTargetDependency */,
+			);
+			name = LemonStoneUITests;
+			productName = LemonStoneUITests;
+			productReference = 991120B92078FF5A00DF825C /* LemonStoneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		991120902078FF5A00DF825C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Sitong Chen";
+				TargetAttributes = {
+					991120972078FF5A00DF825C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					991120AD2078FF5A00DF825C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 991120972078FF5A00DF825C;
+					};
+					991120B82078FF5A00DF825C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 991120972078FF5A00DF825C;
+					};
+				};
+			};
+			buildConfigurationList = 991120932078FF5A00DF825C /* Build configuration list for PBXProject "LemonStone" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9911208F2078FF5A00DF825C;
+			productRefGroup = 991120992078FF5A00DF825C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				991120972078FF5A00DF825C /* LemonStone */,
+				991120AD2078FF5A00DF825C /* LemonStoneTests */,
+				991120B82078FF5A00DF825C /* LemonStoneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		991120962078FF5A00DF825C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				991120A82078FF5A00DF825C /* LaunchScreen.storyboard in Resources */,
+				991120A52078FF5A00DF825C /* Assets.xcassets in Resources */,
+				991120A32078FF5A00DF825C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		991120AC2078FF5A00DF825C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		991120B72078FF5A00DF825C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		991120942078FF5A00DF825C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				991120A02078FF5A00DF825C /* SecondViewController.swift in Sources */,
+				9911209C2078FF5A00DF825C /* AppDelegate.swift in Sources */,
+				9911209E2078FF5A00DF825C /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		991120AA2078FF5A00DF825C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				991120B32078FF5A00DF825C /* LemonStoneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		991120B52078FF5A00DF825C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				991120BE2078FF5A00DF825C /* LemonStoneUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		991120B02078FF5A00DF825C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 991120972078FF5A00DF825C /* LemonStone */;
+			targetProxy = 991120AF2078FF5A00DF825C /* PBXContainerItemProxy */;
+		};
+		991120BB2078FF5A00DF825C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 991120972078FF5A00DF825C /* LemonStone */;
+			targetProxy = 991120BA2078FF5A00DF825C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		991120A12078FF5A00DF825C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				991120A22078FF5A00DF825C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		991120A62078FF5A00DF825C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				991120A72078FF5A00DF825C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		991120C02078FF5A00DF825C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		991120C12078FF5A00DF825C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		991120C32078FF5A00DF825C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2864PGKF26;
+				INFOPLIST_FILE = LemonStone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sitong.LemonStone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		991120C42078FF5A00DF825C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2864PGKF26;
+				INFOPLIST_FILE = LemonStone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sitong.LemonStone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		991120C62078FF5A00DF825C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2864PGKF26;
+				INFOPLIST_FILE = LemonStoneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sitong.LemonStoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LemonStone.app/LemonStone";
+			};
+			name = Debug;
+		};
+		991120C72078FF5A00DF825C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2864PGKF26;
+				INFOPLIST_FILE = LemonStoneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sitong.LemonStoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LemonStone.app/LemonStone";
+			};
+			name = Release;
+		};
+		991120C92078FF5A00DF825C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2864PGKF26;
+				INFOPLIST_FILE = LemonStoneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sitong.LemonStoneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LemonStone;
+			};
+			name = Debug;
+		};
+		991120CA2078FF5A00DF825C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2864PGKF26;
+				INFOPLIST_FILE = LemonStoneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sitong.LemonStoneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LemonStone;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		991120932078FF5A00DF825C /* Build configuration list for PBXProject "LemonStone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				991120C02078FF5A00DF825C /* Debug */,
+				991120C12078FF5A00DF825C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		991120C22078FF5A00DF825C /* Build configuration list for PBXNativeTarget "LemonStone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				991120C32078FF5A00DF825C /* Debug */,
+				991120C42078FF5A00DF825C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		991120C52078FF5A00DF825C /* Build configuration list for PBXNativeTarget "LemonStoneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				991120C62078FF5A00DF825C /* Debug */,
+				991120C72078FF5A00DF825C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		991120C82078FF5A00DF825C /* Build configuration list for PBXNativeTarget "LemonStoneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				991120C92078FF5A00DF825C /* Debug */,
+				991120CA2078FF5A00DF825C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 991120902078FF5A00DF825C /* Project object */;
+}
