@@ -15,6 +15,16 @@
 		991120A82078FF5A00DF825C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 991120A62078FF5A00DF825C /* LaunchScreen.storyboard */; };
 		991120B32078FF5A00DF825C /* LemonStoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991120B22078FF5A00DF825C /* LemonStoneTests.swift */; };
 		991120BE2078FF5A00DF825C /* LemonStoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991120BD2078FF5A00DF825C /* LemonStoneUITests.swift */; };
+		991120D02079006000DF825C /* LSImageLibraryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991120CF2079006000DF825C /* LSImageLibraryVC.swift */; };
+		991120D320790DC800DF825C /* GlobalConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991120D220790DC800DF825C /* GlobalConstant.swift */; };
+		991120DB2079513400DF825C /* purple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 991120D52079513400DF825C /* purple.jpg */; };
+		991120DC2079513400DF825C /* yellow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 991120D62079513400DF825C /* yellow.jpg */; };
+		991120DD2079513400DF825C /* two.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 991120D72079513400DF825C /* two.jpeg */; };
+		991120DE2079513400DF825C /* white.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 991120D82079513400DF825C /* white.jpeg */; };
+		991120DF2079513400DF825C /* red.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 991120D92079513400DF825C /* red.jpeg */; };
+		991120E02079513400DF825C /* rose.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 991120DA2079513400DF825C /* rose.jpg */; };
+		991120E32079524C00DF825C /* LSLibraryCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991120E12079524C00DF825C /* LSLibraryCollectionCell.swift */; };
+		991120E42079524C00DF825C /* LSLibraryCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 991120E22079524C00DF825C /* LSLibraryCollectionCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +59,16 @@
 		991120B92078FF5A00DF825C /* LemonStoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LemonStoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		991120BD2078FF5A00DF825C /* LemonStoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonStoneUITests.swift; sourceTree = "<group>"; };
 		991120BF2078FF5A00DF825C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		991120CF2079006000DF825C /* LSImageLibraryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSImageLibraryVC.swift; sourceTree = "<group>"; };
+		991120D220790DC800DF825C /* GlobalConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstant.swift; sourceTree = "<group>"; };
+		991120D52079513400DF825C /* purple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = purple.jpg; path = ../../../img_source/purple.jpg; sourceTree = "<group>"; };
+		991120D62079513400DF825C /* yellow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = yellow.jpg; path = ../../../img_source/yellow.jpg; sourceTree = "<group>"; };
+		991120D72079513400DF825C /* two.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = two.jpeg; path = ../../../img_source/two.jpeg; sourceTree = "<group>"; };
+		991120D82079513400DF825C /* white.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = white.jpeg; path = ../../../img_source/white.jpeg; sourceTree = "<group>"; };
+		991120D92079513400DF825C /* red.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = red.jpeg; path = ../../../img_source/red.jpeg; sourceTree = "<group>"; };
+		991120DA2079513400DF825C /* rose.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rose.jpg; path = ../../../img_source/rose.jpg; sourceTree = "<group>"; };
+		991120E12079524C00DF825C /* LSLibraryCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSLibraryCollectionCell.swift; sourceTree = "<group>"; };
+		991120E22079524C00DF825C /* LSLibraryCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LSLibraryCollectionCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +99,7 @@
 		9911208F2078FF5A00DF825C = {
 			isa = PBXGroup;
 			children = (
+				991120D42079511400DF825C /* tmp_resource */,
 				9911209A2078FF5A00DF825C /* LemonStone */,
 				991120B12078FF5A00DF825C /* LemonStoneTests */,
 				991120BC2078FF5A00DF825C /* LemonStoneUITests */,
@@ -99,6 +120,8 @@
 		9911209A2078FF5A00DF825C /* LemonStone */ = {
 			isa = PBXGroup;
 			children = (
+				991120D120790DAC00DF825C /* utils */,
+				991120CB2078FFDD00DF825C /* UI */,
 				9911209B2078FF5A00DF825C /* AppDelegate.swift */,
 				9911209D2078FF5A00DF825C /* FirstViewController.swift */,
 				9911209F2078FF5A00DF825C /* SecondViewController.swift */,
@@ -126,6 +149,61 @@
 				991120BF2078FF5A00DF825C /* Info.plist */,
 			);
 			path = LemonStoneUITests;
+			sourceTree = "<group>";
+		};
+		991120CB2078FFDD00DF825C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				991120CC2079000700DF825C /* Library */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		991120CC2079000700DF825C /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				991120CE2079001B00DF825C /* views */,
+				991120CD2079001400DF825C /* controllers */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		991120CD2079001400DF825C /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				991120CF2079006000DF825C /* LSImageLibraryVC.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		991120CE2079001B00DF825C /* views */ = {
+			isa = PBXGroup;
+			children = (
+				991120E12079524C00DF825C /* LSLibraryCollectionCell.swift */,
+				991120E22079524C00DF825C /* LSLibraryCollectionCell.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		991120D120790DAC00DF825C /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				991120D220790DC800DF825C /* GlobalConstant.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		991120D42079511400DF825C /* tmp_resource */ = {
+			isa = PBXGroup;
+			children = (
+				991120D92079513400DF825C /* red.jpeg */,
+				991120D52079513400DF825C /* purple.jpg */,
+				991120D62079513400DF825C /* yellow.jpg */,
+				991120D82079513400DF825C /* white.jpeg */,
+				991120DA2079513400DF825C /* rose.jpg */,
+				991120D72079513400DF825C /* two.jpeg */,
+			);
+			path = tmp_resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +313,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				991120E42079524C00DF825C /* LSLibraryCollectionCell.xib in Resources */,
+				991120E02079513400DF825C /* rose.jpg in Resources */,
 				991120A82078FF5A00DF825C /* LaunchScreen.storyboard in Resources */,
+				991120DC2079513400DF825C /* yellow.jpg in Resources */,
 				991120A52078FF5A00DF825C /* Assets.xcassets in Resources */,
+				991120DB2079513400DF825C /* purple.jpg in Resources */,
+				991120DF2079513400DF825C /* red.jpeg in Resources */,
+				991120DE2079513400DF825C /* white.jpeg in Resources */,
 				991120A32078FF5A00DF825C /* Main.storyboard in Resources */,
+				991120DD2079513400DF825C /* two.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +347,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				991120E32079524C00DF825C /* LSLibraryCollectionCell.swift in Sources */,
 				991120A02078FF5A00DF825C /* SecondViewController.swift in Sources */,
+				991120D320790DC800DF825C /* GlobalConstant.swift in Sources */,
+				991120D02079006000DF825C /* LSImageLibraryVC.swift in Sources */,
 				9911209C2078FF5A00DF825C /* AppDelegate.swift in Sources */,
 				9911209E2078FF5A00DF825C /* FirstViewController.swift in Sources */,
 			);
