@@ -8,9 +8,9 @@
 
 import UIKit
 
-class LSLibraryCollectionCell: UICollectionViewCell {
+class LSLibraryCollectionCloudCell: UICollectionViewCell {
     
-    static let Identifier = "LSLibraryCollectionCell"
+    static let Identifier = "LSLibraryCollectionCloudCell"
 
     @IBOutlet weak var imageView: UIImageView!
     override func awakeFromNib() {

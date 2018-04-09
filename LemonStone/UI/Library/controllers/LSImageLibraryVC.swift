@@ -16,20 +16,20 @@ class LSImageLibraryVC: UIViewController {
     @IBOutlet weak var topTabBar: UITabBar!
     
     @IBOutlet weak var contentScrollView: UIScrollView!
-    
-    var localCollectionView: UICollectionView!
-    
+        
     var cloudCollectionView: UICollectionView!
     
     /*
      Data properties
      */
+    
+    let photoManager = LSLocalPhotoManager.init()
+
     let dataList = ["red.jpeg" , "purple.jpg" , "yellow.jpg" , "white.jpeg" , "rose.jpg" , "two.jpeg"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.initUI()
+//        self.initUI()
     }
 
     override func didReceiveMemoryWarning() {
@@ -65,40 +65,60 @@ class LSImageLibraryVC: UIViewController {
         
         // configure collection view
         let Item_Width = SCREEN_WIDTH / 4 - 3
-        let flowLayout = UICollectionViewFlowLayout.init()
-        flowLayout.itemSize = CGSize.init(width: Item_Width, height: Item_Width)
-        flowLayout.minimumInteritemSpacing = 3
-        flowLayout.minimumLineSpacing = 3
-        flowLayout.sectionInset = UIEdgeInsets.init(top: 2, left: 2, bottom: 0, right: 0)
-        flowLayout.headerReferenceSize = CGSize.init(width: 0, height: 0)
+        let localFlowLayout = UICollectionViewFlowLayout.init()
+        localFlowLayout.itemSize = CGSize.init(width: Item_Width, height: Item_Width)
+        localFlowLayout.minimumInteritemSpacing = 3
+        localFlowLayout.minimumLineSpacing = 3
+        localFlowLayout.sectionInset = UIEdgeInsets.init(top: 2, left: 2, bottom: 0, right: 0)
+        localFlowLayout.headerReferenceSize = CGSize.init(width: 0, height: 0)
+        
+
+        let LocalCellNib = UINib.init(nibName: LSLibraryCollectionLocalCell.Identifier, bundle: nil)
+        let CloudCellNib = UINib.init(nibName: LSLibraryCollectionCloudCell.Identifier, bundle: nil)
+
+        
+        let localCollectionView = UICollectionView.init(frame: CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: Content_Height), collectionViewLayout: localFlowLayout)
+        localCollectionView.register(LocalCellNib, forCellWithReuseIdentifier: LSLibraryCollectionLocalCell.Identifier)
+        self.photoManager.localCollectionView = localCollectionView
+        self.photoManager.request()
         
         
-        let cellNib = UINib.init(nibName: LSLibraryCollectionCell.Identifier, bundle: nil)
+        let cloudFlowLayout = UICollectionViewFlowLayout.init()
+        cloudFlowLayout.itemSize = CGSize.init(width: Item_Width, height: Item_Width)
+        cloudFlowLayout.minimumInteritemSpacing = 3
+        cloudFlowLayout.minimumLineSpacing = 3
+        cloudFlowLayout.sectionInset = UIEdgeInsets.init(top: 2, left: 2, bottom: 0, right: 0)
+        cloudFlowLayout.headerReferenceSize = CGSize.init(width: 0, height: 0)
         
-        self.localCollectionView = UICollectionView.init(frame: CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: Content_Height), collectionViewLayout: flowLayout)
-        self.localCollectionView.register(cellNib, forCellWithReuseIdentifier: LSLibraryCollectionCell.Identifier)
-        self.localCollectionView.delegate = self
-        self.localCollectionView.dataSource = self
         
-        self.cloudCollectionView = UICollectionView.init(frame: CGRect.init(x: SCREEN_WIDTH, y: 0, width: SCREEN_WIDTH, height: Content_Height), collectionViewLayout: flowLayout)
-        self.cloudCollectionView.register(cellNib, forCellWithReuseIdentifier: LSLibraryCollectionCell.Identifier)
+        self.cloudCollectionView = UICollectionView.init(frame: CGRect.init(x: SCREEN_WIDTH, y: 0, width: SCREEN_WIDTH, height: Content_Height), collectionViewLayout: cloudFlowLayout)
+        self.cloudCollectionView.register(CloudCellNib, forCellWithReuseIdentifier: LSLibraryCollectionCloudCell.Identifier)
         self.cloudCollectionView.delegate = self
         self.cloudCollectionView.dataSource = self
         
-        self.localCollectionView.backgroundColor = UIColor.red
         self.cloudCollectionView.backgroundColor = UIColor.blue
         
         // Add collection views to scrollview
-        self.contentScrollView.addSubview(self.localCollectionView)
+        self.contentScrollView.addSubview(localCollectionView)
         self.contentScrollView.addSubview(self.cloudCollectionView)
     }
 
+    
+    @IBAction func testAction(_ sender: Any) {
+        let testVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LSImageTestVCViewController")
+        let nav = UINavigationController.init(rootViewController: testVC)
+        self.navigationController?.present(nav, animated: true, completion: nil)
+    }
+    
 
 }
 
 extension LSImageLibraryVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
     // MARK: UICollectionViewDataSource
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.dataList.count
     }
@@ -106,8 +126,7 @@ extension LSImageLibraryVC: UICollectionViewDelegate, UICollectionViewDataSource
     
     // MARK: UICollectionViewDelegate
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LSLibraryCollectionCell.Identifier, for: indexPath) as! LSLibraryCollectionCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LSLibraryCollectionCloudCell.Identifier, for: indexPath) as! LSLibraryCollectionCloudCell
 
         if let image = UIImage.init(named: self.dataList[indexPath.row], in: Bundle.main, compatibleWith: nil){
             cell.setImage(image: image)
